@@ -123,7 +123,8 @@ python dbprime.py pair \
   -f  \
   -s   \
   -p  \
-  -t 
+  -t  \
+  -d
 ```
 
 Multi-sample comparison (population mode)
@@ -137,7 +138,8 @@ python dbprime.py multi \
   -f  \
   -s   \
   -p  \
-  -t 
+  -t  \
+  -d
 ```
 
 ---
@@ -146,16 +148,18 @@ Command-line Arguments
 
 Common arguments
 
-| Flag                       | Description                         | Default  |
-| -------------------------- | ----------------------------------- | -------- |
-| `-q, --query / --queries`  | Query FASTA/FASTQ file or directory | required |
-| `-r, --reference`          | Reference FASTA file                | required |
-| `-o, --output`             | Output directory                    | required |
-| `-l, --min_indel_length`   | Minimum indel length                |          |
-| `-f, --flank`              | Flanking sequence length            |          |
-| `-s, --product_size_range` | PCR product size range              | –        |
-| `-p, --num_primers`        | Primer pairs per marker             |          |
-| `-t, --threads`            | Threads for alignment               |          |
+| Flag                       | Description                            | Default  |
+| -------------------------- | ---------------------------------------| -------- |
+| `-q, --query / --queries`  | Query FASTA/FASTQ file or directory    | required |
+| `-r, --reference`          | Reference FASTA file                   | required |
+| `-o, --output`             | Output directory                       | required |
+| `-l, --min_indel_length`   | Minimum indel length                   |          |
+| `-f, --flank`              | Flanking sequence length               |          |
+| `-s, --product_size_range` | PCR product size range                 | –        |
+| `-p, --num_primers`        | Primer pairs per marker                |          |
+| `-t, --threads`            | Threads for alignment                  |          |
+| `-d, --design_primers`     | design primers for the detected indels?|          |
+
 
 ---
 

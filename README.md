@@ -1,5 +1,5 @@
 # dbprime - a toolkit for finding InDels and developing Molecular markers
-dbprime is a Python/C++ toolkit for primer design, and selection of molecular markers (SNPs / InDels) with a focus on maize breeding and comparative genomics.
+dbprime is a Python toolkit for primer design, and selection of molecular markers (SNPs / InDels) with a focus on maize breeding and comparative genomics.
 
 
 * Fast (built on minimap2, samtools, Primer3)

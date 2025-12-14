@@ -8,7 +8,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="dbprime: A tool for designing primers flanking indels between two sequences.")
     subcommand = parser.add_subparsers(dest="command", help="Sub-commands")
 
-    pairwise = subcommand.add_parser("pair", help="Sub-command for two samples")
+    pairwise = subcommand.add_parser("pair", help="Sub-commands for two samples")
 
     pairwise.add_argument("-q", "--query", required=True, type=os.path.abspath, help="Path to the query FASTA/FASTQ file.")
     pairwise.add_argument("-r", "--reference", required=True, help="Path to the reference FASTA file.")
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     pairwise.add_argument("-d", "--design_primers", action='store_true', help="Flag to indicate whether to design primers for the detected indels.")
 
 
-    multiple = subcommand.add_parser("multi", help="Sub-command for multiple samples")
+    multiple = subcommand.add_parser("multi", help="Sub-commands for multiple samples")
     multiple.add_argument("-q", "--queries", required=True, type=os.path.abspath, help="Path to the directory containing multiple query FASTA/FASTQ files.")
     multiple.add_argument("-r", "--reference", required=True, type=os.path.abspath, help="Path to the reference FASTA file.")
     multiple.add_argument("-o", "--output", required=True, type=os.path.abspath, help="Path to the output directory.")

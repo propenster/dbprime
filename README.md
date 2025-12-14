@@ -57,13 +57,13 @@ This ensures all compiled bioinformatics tools work correctly.
 
 ```bash
 conda env create -f env.yaml
-conda activate mindel
+conda activate dbprime
 ```
 
 . Environment definition (`env.yaml`)
 
 ```yaml
-name: mindel
+name: dbprime
 channels:
   - conda-forge
   - bioconda
